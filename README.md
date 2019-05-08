@@ -15,7 +15,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Cloud Development](#cloud-development)
 * [The assembly of the product](#the-assembly-of-the-product)
 * [The Final Product](#the-final-product)
-* [Comments](#comments)
+* [Future Rollout](#future-rollout)
 * [References](#references)
 
 ## Introduction:
@@ -60,11 +60,11 @@ Optional to make the PCB Breadboard:
 
 ## VMA Circuit for RaspberryPi:
 
-As one of the first steps to realize our system, it is necessary to realize a circuit which allows the Raspberry to obtain the accelerometer data, since this is communicated by I2C also known as TWI, it will be necessary to realize a circuit which allows the simple connection of this module to the headers of the raspberry.
+As a first step it is necessary to make a circuit that allows the Raspberry to obtain the accelerometer data, communicated by I2C also known as TWI, it will be necessary to realize a circuit which allows the connection of this module to the headers of the raspberry.
 
 <img src="https://i.ibb.co/z263cRP/Untitled-1.png" width="500">
 
-In the case of the connections for the module, they would be the following:
+This is the connection diagram:
 
 <img src="https://i.ibb.co/k8WMrFY/VMA.png" width="500">
 
@@ -100,7 +100,7 @@ Note: for this tutorial it is necessary setup the raspberry with an HDMI monitor
 
 - https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/
 
-This was the tutorial that I used and it worked, however there are many different tutorials in the network, if this does not work try another one.
+This was the tutorial that I used and it worked, however there are many different tutorials on internet, if this does not work try another one.
 
 - https://www.learnopencv.com/tag/raspberry-pi/
 - https://tutorials-raspberrypi.com/installing-opencv-on-the-raspberry-pi/
@@ -120,12 +120,6 @@ https://www.raspberrypi.org/documentation/usage/webcams/
 * As a last step we disconnected the internet raspberry to stay only with the connection that the Soracom Dongle will give us.
 
 ### Dongle Setup:
-
-* To configure the Dongle, we will use the official Soracom guide to correctly configure the dongle in the raspberry.
-
-https://github.com/soracom/handson/wiki/1.3.-USB-Dongle-configuration-tutorial
-
-### Audio Setup:
 
 * To configure the Dongle, we will use the official Soracom guide to correctly configure the dongle in the raspberry.
 
@@ -305,7 +299,7 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
     
 * Save the file in the Desktop with the name "E.py".
     
-## Configure the Raspberry to initialize the code with boot.
+## Configure the audio and initialize the code with boot.
 
 * Open terminal and write the next command.
 
@@ -462,9 +456,13 @@ Video: Click on the image
 
 Sorry github does not allow embed videos.
 
-## Comments:
+## Future Rollout:
 
+During the development of the project, I enjoy the Soracom platform to send data to AWS IoT, the next development that can be sought to follow this product is to improve the case and the components to obtain the following advantages:
 
+- Power the RaspberryPi with a feeder in the car.
+- Improve the facial and ocular recognition algorithm.
+- Improve the case to make an attractive product.
 
 ## References:
 

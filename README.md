@@ -20,16 +20,16 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 ## Introduction:
 
-Sleeping, one of the most basic needs of the human, daily is a task that at least we must perform for 8 hours, in order to have energy to carry out our activities, however today it seems to be a luxury that not many they can enjoy, some do not sleep for work, for enjoying a few more chapters of their favorite series, or even for partying.
+Sleeping, one of the most basic needs of the human being, is a daily task that, at least, we must perform for 8 hours. However, it seems that sleeping is a luxury that not many can have. Some do not sleep for pending work, for enjoying some more episodes of their favorite series, or even for a party.
 
-Not sleeping today is a common practice among young people, however not sleeping reduces the ability to react and attention to perform tasks as simple as sending a text message or even tasks as complex as driving a car.
-
-The problem we have here is, what happens if we need to drive and we are tired?
+Not sleeping today is a common practice among young people, however not sleeping reduces the ability to react and attention to perform tasks as simple as sending a text message or even tasks as complex as **driving a car**.
 
 According to the National Highway Traffic Safety Administration and the Centers for Disease Control and Prevention they say that it is 7 times dangerous driving tired to driving drunk.
 
 - Number of drunk driving crashes: 10,874 *
 - Number of tired driving crashes: 72,000 **
+
+The problem we have here is, what happens if we need to drive and we are tired?
 
 The best solution to this problem will always be to sleep at night, if it is not possible to do it, as a solution I create the drowsiness monitor to avoid falling asleep while driving.
 
@@ -51,7 +51,7 @@ https://www.cdc.gov/features/dsdrowsydriving/index.html **
 - Touchpad and Keyboard USB         x 1. (https://www.amazon.com/dp/B07KZ7S6S7/ref=cm_sw_r_tw_dp_U_x_cuM0CbQZBX6VH)
 - HDMI Cable                        x 1.
  
-Optional to make the PCB:
+Optional to make the PCB Breadboard:
 
 - Soldering Station.
 - Wire Wrap Cable.

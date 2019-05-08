@@ -62,11 +62,11 @@ In the case of the connections for the module, they would be the following:
 
 In my case I made a "Shield" with a PCB Breadboard so I could place it on the raspberry easily.
 
-<img src="https://i.ibb.co/55Jb665/IMG-20190507-231237-2.jpg" width="400"><img src="https://i.ibb.co/K9PQs0Y/IMG-20190507-231304-2.jpg" width="400">
+<img src="https://i.ibb.co/55Jb665/IMG-20190507-231237-2.jpg" height="400"><img src="https://i.ibb.co/K9PQs0Y/IMG-20190507-231304-2.jpg" height="400">
 
 Already placed on the raspberry:
 
-<img src="https://i.ibb.co/WpPk3HC/IMG-20190506-132743-2.jpg" width="400"><img src="https://i.ibb.co/G2HQ71m/IMG-20190506-132756-2.jpg" width="400">
+<img src="https://i.ibb.co/WpPk3HC/IMG-20190506-132743-2.jpg" height="400"><img src="https://i.ibb.co/G2HQ71m/IMG-20190506-132756-2.jpg" height="400">
 
 Otherwise, if you do not want to make this "Shield" you can simply connect it using dupont cable.
 

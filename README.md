@@ -455,7 +455,7 @@ As a first step we will have to configure AWS IAM so that Soracom can communicat
 
 ## The Final Product:
 
-Now just put it in your vehicle and READY! You will not have to worry about crashing while driving!
+Now just put it in your vehicle and READY! You will not have to worry about falling asleep while driving!
 
 Video: Click on the image
 [![Intelligent drowsiness monitor](https://i.ibb.co/C6NcYh7/Intelligent-drowsiness-monitor.png)](https://www.youtube.com/watch?v=Mg6gM844Tjs)

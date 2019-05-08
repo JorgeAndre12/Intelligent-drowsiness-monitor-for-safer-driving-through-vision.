@@ -10,8 +10,9 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Materials](#materials)
 * [VMA Circuit for RaspberryPi](#vma-circuit-for-raspberrypi)
 * [Raspberry Setup](#raspberry-setup)
-* [Software Development](#software-development)
+* [Raspberry Software Development](#raspberry-software-development)
 * [Configure the Raspberry to initialize the code with boot](#configure-the-raspberry-to-initialize-the-code-with-boot)
+* [Cloud Development](#cloud-development)
 * [The assembly of the product](#the-assembly-of-the-product)
 * [The Final Product](#the-final-product)
 * [Comments](#comments)
@@ -127,7 +128,7 @@ https://github.com/soracom/handson/wiki/1.3.-USB-Dongle-configuration-tutorial
 
 https://github.com/soracom/handson/wiki/1.3.-USB-Dongle-configuration-tutorial
 
-## Software Development:
+## Raspberry Software Development:
 
 Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pegar el siguiente codigo, todo el codigo esta comentado y explicado.
 
@@ -228,8 +229,8 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
             r = requests.get(send_url)
             j = json.loads(r.text)
             # We convert json to string
-            lat = str(j['latitude'])
-            lon = str(j['longitude'])
+            lat = j['latitude']
+            lon = j['longitude']
             # We create the payload and headers
             payload = '{"deviceid" : "Car 0001",    "lat" : lat, "lon" :lon}'
             headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
@@ -242,8 +243,8 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
             r = requests.get(send_url)
             j = json.loads(r.text)
             # We convert json to string
-            lat = str(j['latitude'])
-            lon = str(j['longitude'])
+            lat = j['latitude']
+            lon = j['longitude']
             # We create the payload and headers
             payload = '{"deviceid" : "Car 0001",    "lat" : lat, "lon" :lon}'
             headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
@@ -256,8 +257,8 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
             r = requests.get(send_url)
             j = json.loads(r.text)
             # We convert json to string
-            lat = str(j['latitude'])
-            lon = str(j['longitude'])
+            lat = j['latitude']
+            lon = j['longitude']
             # We create the payload and headers
             payload = '{"deviceid" : "Car 0001",    "lat" : lat, "lon" :lon}'
             headers = {'content-type': 'application/json', 'Accept-Charset': 'UTF-8'}
@@ -312,6 +313,64 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
       amixer cset numid=3 1
       sudo python E.py
       
+## Cloud Development:
+
+Nota: Este tutorial esta diseñado para personas que ya tengan cuenta y SIM registradas en https://console.soracom.io/
+
+### Configuration AWS IAM Credentials.
+
+As a first step we will have to configure AWS IAM so that Soracom can communicate without restrictions to AWS IoT.
+
+* In the AWS console we look for IAM
+
+<img src = "https://i.ibb.co/rm6QJtG/1.png" width = "500">
+
+* We enter the option of IAM.
+
+<img src = "https://i.ibb.co/MMGqpmj/2.png" width = "500">
+
+* Inside the IAM console we enter the "Users" option.
+
+<img src = "https://i.ibb.co/25HJ2TQ/3.png" width = "500">
+
+* Click on the "Add user" button.
+
+<img src = "https://i.ibb.co/92S0wdg/4.png" width = "500">
+
+* We put the name you want and select the option "Programatic Access".
+
+<img src = "https://i.ibb.co/Y7TKB0h/5.png" width = "500">
+
+* In the "Attach existing polices directly" option we select "AWSIotFullAccess".
+
+<img src = "https://i.ibb.co/gTxmPLt/6.png" width = "500">
+
+* Once we finish everything we will access our Access key ID and Secret Access key (Save them well because we will use them to configure the Soracom console)
+
+<img src = "https://i.ibb.co/khZfY57/7.png" width = "500">
+
+* We go to the AWS IoT Console and go to the "Settings" option.
+
+<img src = "https://i.ibb.co/r5FCCTm/11.png" width = "500">
+
+* In the "Settings" option we obtain our Endpoint API.
+
+<img src = "https://i.ibb.co/gv3p1J3/12.png" width = "500">
+
+### Configuration Soracom Funnel.
+
+* In the Soracom console we enter the group that is the SIM Card.
+
+<img src = "https://i.ibb.co/ZV5m9BT/8.png" width = "500">
+
+* Browse to the option of Funnel and paste in Endpoint that we obtained in the AWS IoT console and add the Topic where we will post the data.
+
+<img src = "https://i.ibb.co/nfLQ421/9.png" width = "500">
+
+* Finally We create the IAM credentials in Funnel as shown in the image.
+
+<img src = "https://i.ibb.co/2Pr0tc2/10.png" width = "500">
+
 
 ## The assembly of the product:
 

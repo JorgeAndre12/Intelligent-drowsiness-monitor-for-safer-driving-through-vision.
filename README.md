@@ -12,6 +12,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Raspberry Setup](#raspberry-setup)
 * [Software Development](#software-development)
 * [Configure the Raspberry to initialize the code with boot](#configure-the-raspberry-to-initialize-the-code-with-boot)
+* [The assembly of the product](#the-assembly-of-the-product)
 * [The Final Product](#the-final-product)
 * [Comments](#comments)
 * [References](#references)
@@ -306,10 +307,37 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
 
       sudo nano /etc/rc.local
 
-* Add after "fi" the next code and save the file.
+* Add after "fi" paste the next code to set the jack output and excecute the program.
 
       amixer cset numid=3 1
       sudo python E.py
+      
+
+## The assembly of the product:
+
+* Mount the battery in the case that we will use to power the raspberry.
+<img src = "https://i.ibb.co/sRSLnCp/IMG-20190506-132701.jpg" width = "600">
+
+* Mount the raspberry on the battery.
+<img src = "https://i.ibb.co/02TjPcg/IMG-20190506-132724.jpg" width = "600">
+
+* We connect our "Shield" of the accelerometer.
+<img src = "https://i.ibb.co/SmxqNhj/IMG-20190506-132756.jpg" width = "600">
+
+* We put our USB cable to microUSB to power the Raspberry.
+<img src = "https://i.ibb.co/1dj6jPn/IMG-20190506-133112.jpg" width = "600">
+
+* We connect our Speaker to the jack output of the raspberry.
+<img src = "https://i.ibb.co/SnfSr57/IMG-20190506-133130.jpg" width = "600">
+
+* We connect the USB camera to the Raspberry.
+<img src = "https://i.ibb.co/j8rH6VJ/IMG-20190506-133252.jpg" width = "600">
+
+* We connect the Raspberry Dongle.
+<img src = "https://i.ibb.co/sHvnkTQ/IMG-20190506-133351.jpg" width = "600">
+
+* We close the Case to finish the product.
+<img src = "https://i.ibb.co/WvyNfnP/IMG-20190506-133512.jpg" width = "600">
 
 ## The Final Product:
 

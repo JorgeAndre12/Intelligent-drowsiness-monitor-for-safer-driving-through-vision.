@@ -60,7 +60,7 @@ Optional to make the PCB:
 
 ## VMA Circuit for RaspberryPi:
 
-As one of the first steps to realize our system, it is necessary to realize a circuit which allows the Raspberry to obey the accelerometer data, since this is communicated by I2C also known as TWI, it will be necessary to realize a circuit which allows the simple connection of this module to the headers of the raspberry.
+As one of the first steps to realize our system, it is necessary to realize a circuit which allows the Raspberry to obtain the accelerometer data, since this is communicated by I2C also known as TWI, it will be necessary to realize a circuit which allows the simple connection of this module to the headers of the raspberry.
 
 <img src="https://i.ibb.co/z263cRP/Untitled-1.png" width="500">
 
@@ -139,7 +139,7 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
     """
     Created on Thu Apr 11 01:48:57 2019
 
-    @author: VAI
+    @author: ANDRE
     """
     import smbus
     import numpy as np
@@ -318,13 +318,13 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
       
 ## Cloud Development:
 
-Nota: Este tutorial esta diseñado para personas que ya tengan cuenta y SIM registradas en https://console.soracom.io/
+Note: This tutorial is designed for people who already have an account and SIM registered in https://console.soracom.io/
 
 ### Configuration AWS IAM Credentials.
 
 As a first step we will have to configure AWS IAM so that Soracom can communicate without restrictions to AWS IoT.
 
-* In the AWS console we look for IAM
+* In the AWS console we look for IAM.
 <img src = "https://i.ibb.co/rm6QJtG/1.png" width = "700">
 * We enter the option of IAM.
 <img src = "https://i.ibb.co/MMGqpmj/2.png" width = "700">
@@ -334,7 +334,7 @@ As a first step we will have to configure AWS IAM so that Soracom can communicat
 <img src = "https://i.ibb.co/92S0wdg/4.png" width = "700">
 * We put the name you want and select the option "Programatic Access".
 <img src = "https://i.ibb.co/Y7TKB0h/5.png" width = "700">
-* In the "Attach existing polices directly" option we select "AWSIotFullAccess".
+* In the "Attach existing polices directly" option, we select "AWSIotFullAccess".
 <img src = "https://i.ibb.co/gTxmPLt/6.png" width = "700">
 * Once we finish everything we will access our Access key ID and Secret Access key (Save them well because we will use them to configure the Soracom console)
 <img src = "https://i.ibb.co/khZfY57/7.png" width = "700">

@@ -1,5 +1,4 @@
-# Intelligent-drowsiness-monitor-for-safer-driving-through-vision.
-Intelligent drowsiness monitor for safer driving, through vision.
+# Intelligent drowsiness monitor for safer driving through vision.
 
 <img src="https://media.giphy.com/media/2A53iheUI58rXtdvs9/giphy.gif" width="1000">
 
@@ -9,7 +8,7 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 
 * [Introduction](#introduction)
 * [Materials](#materials)
-* [The Circuit](#the-circuit)
+* [VMA Circuit for RaspberryPi](#vma-circuit-for-raspberrypi)
 * [The PCB](#the-pcb)
 * [Development](#development)
 * [The Final Product](#the-final-product)
@@ -33,35 +32,46 @@ The best solution to this problem will always be to sleep at night, if it is not
 
 ## Materials:
 
-- Cable                                x 2 Meters.
-- IPT60R028G7 (600VCoolMOS)            x 4.
-- MOC3021 (Optoisolator Triac Driver)  x 4.
-- 2N6073AG (Triac)                     x 4.
-- 1uF Cap                              x 4.
-- 220 Ω                                x 4.
-- 100 kΩ                               x 4.
-- 10  kΩ                               x 4.
-- 330 Ω                                x 4.
-- Lightbulb socket                     x 4.
-- Lightbulb                            x 4.
-- Plug                                 x 1.
-- Protoboard.                          x 1.
-- Dupont Cable or Jumpers              To Many.
-- Arduino Board.                       x 1.
-- 12 Volts Source (For Arduino).       x 1.
-- Sound Detection Sensor Module Sensor x 1.
+- Huawei 3G USB dongle (MS2131i)    x 1.
+- Soracom Global SIM Card           x 1.                        
+- Raspberry Pi 3                    x 1.
+- Generic Webcam                    x 1.
+- VMA204 Accelerometer              x 1.
+- Little Speaker  (Generic)         x 1.
+- PCB Breadboard                    x 1.
+- Case                              x 1.
+- Battery 5v (2.5 amps)             x 1.
+- USB to Microusb cable             x 1.
 
 Optional to make the PCB:
 
 - Soldering Station.
 - Wire Wrap Cable.
 - Soldering Iron.
-- Copper Clad Plate
-- Ferric Chloride
-- Sharpie Pen.
-- Alligator Cable x 4.
+- PCB Breadboard.                   
 
-## The Circuit:
+## VMA Circuit for RaspberryPi:
+
+As one of the first steps to realize our system, it is necessary to realize a circuit which allows the Raspberry to obey the accelerometer data, since this is communicated by I2C also known as TWI, it will be necessary to realize a circuit which allows the simple connection of this module to the headers of the raspberry.
+
+<img src="https://i.ibb.co/z263cRP/Untitled-1.png" width="500">
+
+In the case of the connections for the module, they would be the following:
+
+<img src="https://i.ibb.co/k8WMrFY/VMA.png" width="500">
+
+In my case I made a "Shield" with a PCB Breadboard so I could place it on the raspberry easily.
+
+<img src="https://i.ibb.co/55Jb665/IMG-20190507-231237-2.jpg" width="500"><img src="https://i.ibb.co/K9PQs0Y/IMG-20190507-231304-2.jpg" width="500">
+
+Already placed on the raspberry:
+
+<img src="https://i.ibb.co/WpPk3HC/IMG-20190506-132743-2.jpg" width="500"><img src="https://i.ibb.co/G2HQ71m/IMG-20190506-132756-2.jpg" width="500">
+
+Otherwise, if you do not want to make this "Shield" you can simply connect it using dupont cable.
+
+
+
 
 The purpose of the circuit is to switch from a digital signal of 0-5 V DC to a control signal of 120 V AC.
 

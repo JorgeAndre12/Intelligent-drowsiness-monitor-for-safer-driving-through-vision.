@@ -58,11 +58,11 @@ Optional to make the PCB Breadboard:
 - Soldering Iron.
 - PCB Breadboard.  
 
-## Connectivity Diagram:
+## Connection Diagram:
 
-Este es el diagrama de las conexiones del sistema:
+This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/VQTz5bN/Car.png" width="500">
+<img src="https://i.ibb.co/VQTz5bN/Car.png" width="800">
 
 ## VMA Circuit for RaspberryPi:
 

@@ -62,7 +62,7 @@ In the case of the connections for the module, they would be the following:
 
 In my case I made a "Shield" with a PCB Breadboard so I could place it on the raspberry easily.
 
-<img src="https://i.ibb.co/55Jb665/IMG-20190507-231237-2.jpg" height="280"><img src="https://i.ibb.co/K9PQs0Y/IMG-20190507-231304-2.jpg" height="280">
+<img src="https://i.ibb.co/55Jb665/IMG-20190507-231237-2.jpg" height="250"><img src="https://i.ibb.co/K9PQs0Y/IMG-20190507-231304-2.jpg" height="250">
 
 Already placed on the raspberry:
 

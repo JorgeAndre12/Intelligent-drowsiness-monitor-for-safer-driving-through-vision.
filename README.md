@@ -1,6 +1,6 @@
 # Intelligent drowsiness monitor for safer driving through vision.
 
-<img src="https://media.giphy.com/media/2A53iheUI58rXtdvs9/giphy.gif" width="1000">
+<img src="https://i.ibb.co/C6NcYh7/Intelligent-drowsiness-monitor.png" width="1000">
 
 Always use technology to improve the world, if you are a black hat or gray hat hacker please abstain at this point ......... or at least leave your star to make me feel less guilty XP.
 
@@ -341,36 +341,22 @@ Para este tutorial solo tendremos que abir el editor Thonny en la raspberry y pe
 
 ## The Final Product:
 
-With the circuit running, we decided to make control modules like the one shown in the image to not depend on any cable failing in the breadboard.
-
-<img src="https://i.ibb.co/cwBmGVz/Whats-App-Image-2019-01-10-at-17-50-41.jpg" width="300"><img src="https://i.ibb.co/JmDS6tv/Whats-App-Image-2019-01-10-at-17-59-32.jpg" width="300">
-
-The board was made based on the one that is in the folder "PCB Files" however since we did not have transfer paper we had to make the vias with a sharpie. It is a permanenr marker so when you dip the plate in ferric chloride it survives, this process is the classic one for making homemade PCBs. You can get to know more about this process in the following link:
-
-https://www.hackster.io/Junezriyaz/how-to-make-pcb-using-marker-531087 
-
-After making three aditional PCB's, we decided to put the entire circuit in a box, covering it and with 4 identical lamps so that this was a more aesthetic product and easy to transport.
-
-<img src="https://i.ibb.co/3Yjs6Qz/IMG-1415.jpg">
-
-And we are done! With this we have finished the light synchronization system for electrical elements (120 or 220 volts).
+Now just put it in your vehicle and READY! You will not have to worry about crashing while driving!
 
 Video: Click on the image
-[![MOSMusic - The Gray Hat - Arduino Music](https://i.ibb.co/cCkXrhZ/1219145071.jpg)](https://www.youtube.com/watch?v=daAjffZg2-g)
+[![Intelligent drowsiness monitor](https://i.ibb.co/C6NcYh7/Intelligent-drowsiness-monitor.png)](https://www.youtube.com/watch?v=Mg6gM844Tjs
 
 Sorry github does not allow embed videos.
 
 ## Comments:
 
-This project was carried out in order to demonstrate that the control of lights through microcontrollers can be efficient and cheap, since current systems at a much lower quality are sold at excessive prices and therefore not available to all.
 
-And to showcase a creative and seldom seen approach to use the CoolMOS C7 MOSFETs provided by Infineon
 
 ## References:
 
 All the information about the technology used, and direct references are in our wiki:
 
-Wiki: https://github.com/altaga/MOSMusic-MM-/wiki
+Wiki: https://github.com/altaga/
 
 Top:
 

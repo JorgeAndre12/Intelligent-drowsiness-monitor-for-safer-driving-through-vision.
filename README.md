@@ -9,7 +9,8 @@ Always use technology to improve the world, if you are a black hat or gray hat h
 * [Introduction](#introduction)
 * [Materials](#materials)
 * [VMA Circuit for RaspberryPi](#vma-circuit-for-raspberrypi)
-* [The PCB](#the-pcb)
+* [Raspberry Setup](#raspberry-setup)
+* [Connect the rest of the components](#connect-the-rest-of-the-components)
 * [Development](#development)
 * [The Final Product](#the-final-product)
 * [Comments](#comments)
@@ -42,7 +43,9 @@ The best solution to this problem will always be to sleep at night, if it is not
 - Case                              x 1.
 - Battery 5v (2.5 amps)             x 1.
 - USB to Microusb cable             x 1.
-
+- Touchpad and Keyboard USB         x 1. (https://www.amazon.com/dp/B07KZ7S6S7/ref=cm_sw_r_tw_dp_U_x_cuM0CbQZBX6VH)
+- HDMI Cable                        x 1.
+ 
 Optional to make the PCB:
 
 - Soldering Station.
@@ -68,41 +71,39 @@ Already placed on the raspberry:
 
 <img src="https://i.ibb.co/WpPk3HC/IMG-20190506-132743-2.jpg" height="300"><img src="https://i.ibb.co/G2HQ71m/IMG-20190506-132756-2.jpg" height="300">
 
-Otherwise, if you do not want to make this "Shield" you can simply connect it using dupont cable.
+Otherwise, if you do not want to make this "Shield" you can simply connect it using dupont cable XP, but the soldered circuit is always better.
 
+## Raspberry Setup:
 
+Note: for this tutorial it is necessary setup the raspberry with an HDMI monitor and a Touchpad and Keyboard USB, we will not use a normal internet connection, we use a connection through the Huawei 3G USB dongle, it is not advisable to use wireless.
 
+* Download "Raspbian Stretch with desktop" from https://www.raspberrypi.org/downloads/raspbian/.
+* Flash Raspbian on the sd card as indicated on the official page. https://www.raspberrypi.org/documentation/installation/installing-images/README.md
+* Connect the RaspberryPi 3 HDMI cable, connect the other side of the cable to the screen.
+* Connect the SD card to the raspberry.
+* Connect the USB of the Touchpad and Keyboard to the raspberry.
+* Comes the Huawei 3G USB dongle to the raspberry.
+* In this case connect the USB cable to the battery and the microUSB to the Raspberry for powered.
+* Once you achieve this you should see Raspbian's desktop on the screen.
 
-The purpose of the circuit is to switch from a digital signal of 0-5 V DC to a control signal of 120 V AC.
+<img src = "https://thepi.io/wp-content/uploads/2017/10/raspberry-pi-desktop-500px.png" width = "500">  
 
-In the first stage of the circuit we have an Infineon 600VCoolMOS C7 MOSFET, which will allow us to control the optocoupler demanding the minimum current to the Arduino board, because the optocoupler requires at least 5 volts at 36mA to be able to drive. This is very close to the limit of the current that the Arduino board can supply, however the 600VCoolMOS only requires a signal of 5 volts at 60uA, thus showing an excessive improvement in the consumption that it requires from the board.
+### OpenCV Setup:
 
-This consumption is extremely important because it gives us the possibility of being able to literally use any controller to perform this task due to its low consumption, thus not requiring more expensive drivers that can supply said power in their ports.
+* As a first step to configure raspberry correctly we will have to connect to a Wifi network, because we will have to install OpenCV in the raspberry.
 
-<img src="https://i.ibb.co/Jx4Jbh9/Infineon.png">
+- https://www.pyimagesearch.com/2018/09/26/install-opencv-4-on-your-raspberry-pi/
 
-The MOSFET's operation is to ground the optocoupler diode, once this is activated it allows the flow of energy through the DIAC and this in turn allows the passage of current in the TRIAC connected to the lamp and igniting it in the process.
+This was the tutorial that I used and it worked, however there are many different tutorials in the network, if this does not work try another one.
 
-The other great advantage of using the MOSFET is the ease of increasing the number of drivers as in image 1 or using more powerful drivers as in image 2 without changing the design of the main circuit.
+- https://www.learnopencv.com/tag/raspberry-pi/
+- https://tutorials-raspberrypi.com/installing-opencv-on-the-raspberry-pi/
 
-<img src="https://i.ibb.co/rsnBTWZ/MOSFET1.png" width="420"><img src="https://i.ibb.co/ThJPvtG/MOSFET2.png" width="420">
+### Dongle Setup:
 
-Different results in different boards:
+* En el caso de la configuracion del Dongle utilizaremos la guia onficial de Soracom para configurar correctamente el dongle en la raspberry.
 
-| Comparison                     | Voltage [V]  | Current [mA] | Max Current I/O Pins [mA]| Board       | Risk        |
-|--------------------------------|--------------|--------------|--------------------------|-------------|-------------|
-| **Without MOSFET 600VCoolMOS** | 5.0          | 15.0         | 40.0                     | Arduino UNO | LOW         | 
-| **With MOSFET 600VCoolMOS**    | 5.0          | 0.06         | 40.0                     | Arduino UNO | NOTHING     |
-| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 10.0                     | ESP32       | EXTREMELY   |
-| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 10.0                     | ESP32       | NOTHING     |
-| **Without MOSFET 600VCoolMOS** | 3.3          | 15.0         | 12.0                     | ESP8266     | HIGH        |
-| **With MOSFET 600VCoolMOS**    | 3.3          | 0.04         | 12.0                     | ESP8266     | NOTHING     |
-
-Another solution to this project would have been to use relays, which have the function of performing this same task but mechanically, by generating a "Click" on each switch. The problem with this type of component is that if we use dimerizable lights or the switching frequency was larger, the relay could not perform this task, which the mosfet, optocoupler and triac can easily do.
-
-<img src="https://i.ibb.co/ctHj1N5/Untitled.png">
-
-## The PCB:
+# Connect the rest of the components.
 
 For this project it is possible to make individual modules to be able to expand the number of bulbs or high voltage devices connected to the Arduino or to any other board.
 

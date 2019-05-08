@@ -117,6 +117,9 @@ This was the tutorial that I used and it worked, however there are many differen
       
 * With this command we will have all the libraries installed.
 
+Example of image processing with OpenCV: Click on the image
+[![OpenCV Processing](https://robologs.net/wp-content/uploads/2014/04/opencv_logo.png)](https://youtu.be/9zasymtyrO0)
+
 ### Webcam Setup:
 
 * To install the webcam correctly we will use the following Raspberry official guide.

@@ -425,7 +425,7 @@ As a first step we will have to configure AWS IAM so that Soracom can communicat
 * Once the lambda is created, we return to the tab "Configure Action" to add the lambda to the rule and select the lambda we created.
 <img src = "https://i.ibb.co/2NsfrMm/22.png" width = "700">
 
-* After this and everything will be working, every time you send data of a shock will be notified by SNS to all recipients of email or cell subscribed.
+* After this and everything will be working, every time you send data of a crash will be notified by SNS to all recipients of email or cell subscribed.
 
 ## The assembly of the product:
 

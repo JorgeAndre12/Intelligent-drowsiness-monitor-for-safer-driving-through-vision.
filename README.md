@@ -86,7 +86,7 @@ Otherwise, if you do not want to make this "Shield" you can simply connect it us
 
 ## Raspberry Setup:
 
-Note: for this tutorial it is necessary setup the raspberry with an HDMI monitor and a Touchpad and Keyboard USB, we will not use a normal internet connection, we use a connection through the Huawei 3G USB dongle, it is not advisable to use wireless.
+Note: for this tutorial it is necessary setup the raspberry with an HDMI monitor and a Touchpad and a Keyboard USB. We will not use a normal internet connection, we use a connection through the Huawei 3G USB dongle.
 
 * Download "Raspbian Stretch with desktop" from https://www.raspberrypi.org/downloads/raspbian/.
 * Flash Raspbian on the sd card as indicated on the official page. https://www.raspberrypi.org/documentation/installation/installing-images/README.md
@@ -428,7 +428,7 @@ As a first step we will have to configure AWS IAM so that Soracom can communicat
 * Once the lambda is created, we return to the tab "Configure Action" to add the lambda to the rule and select the lambda we created.
 <img src = "https://i.ibb.co/2NsfrMm/22.png" width = "700">
 
-* After this and everything will be working, every time you send data of a crash will be notified by SNS to all recipients of email or cell subscribed.
+* After this everything will be working, every time you send data, or if you happen to be in a crash, an SMS will be sent to all recipients subscribed whether it is by emil or cellphone.
 
 ## The assembly of the product:
 
@@ -458,7 +458,7 @@ As a first step we will have to configure AWS IAM so that Soracom can communicat
 
 ## The Final Product:
 
-Now just put it in your vehicle and READY! You will not have to worry about falling asleep while driving!
+Now just put it in your vehicle and you are set! You will not have to worry about falling asleep while driving!
 
 Video: Click on the image
 [![Intelligent drowsiness monitor](https://i.ibb.co/C6NcYh7/Intelligent-drowsiness-monitor.png)](https://www.youtube.com/watch?v=Mg6gM844Tjs)
@@ -467,9 +467,9 @@ Sorry github does not allow embed videos.
 
 ## Future Rollout:
 
-During the development of the project, I enjoy the Soracom platform to send data to AWS IoT, the next development that can be sought to follow this product is to improve the case and the components to obtain the following advantages:
+During the development of the project, I really enjoyed the Soracom platform as I was sending data to AWS IoT. The next development that can be sought to follow, is to improve the case and the components to obtain the following advantages:
 
-- Power the RaspberryPi with a feeder in the car.
+- To Power the RaspberryPi with a feeder in the car.
 - Improve the facial and ocular recognition algorithm.
 - Improve the case to make an attractive product.
 
